@@ -55,7 +55,7 @@ public class ahp {
 
 
 	            }
-	            b[m]=s/a;
+	            b[i]=s/a;
 	            s=0;
 	        }
 	        return b;
