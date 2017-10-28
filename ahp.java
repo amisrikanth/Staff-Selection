@@ -63,35 +63,8 @@ public class ahp {
 	    }
 	  
 	  
-	  public double[] final_cal(double[] ca,double[] ga,double[] sa,double[] st,double[] crtP,int c){
-	        double[] final_cg=new double[c];
-	        double[] final_gp=new double[c];
-	        double[] final_spCertificate=new double[c];
-	        double[] final_techGroup=new double[c];
-	        double[] goal=new double[c];
-	        int k=0;
-	        for(int j=0;j<c;j++){
-	            final_cg[j]=crtP[0]*ca[j];
-	            final_gp[j]=crtP[1]*ga[j];
-	            final_spCertificate[j]=crtP[2]*sa[j];
-	            final_techGroup[j]=crtP[3]*st[j];
-
-	        }
-
-	            for(int l=0;l<c;l++){
-	                goal[k]=final_cg[l]+final_gp[l]+final_spCertificate[l]+final_techGroup[l];
-	                k++;
-	            }
-
-	        return goal;
-
-
-	    }
-
 	    public int indexOfMax(double[] arr) {
-
-
-	        double max = arr[0];
+                double max = arr[0];
 	        int maxIndex = 0;
 
 	        for (int i = 1; i < arr.length; i++) {
